@@ -1,0 +1,157 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15.2061px;
+    display: block;
+    width: auto;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+   }
+
+h1 {
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: #121212;
+    color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+.logo {
+    padding: 1500px 0;
+}
+
+.centralizador_inicio{
+    width: 50%;
+    height:300px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.centralizador_inicio h1{
+   position: relative;               /* 2 */
+   top: 30%;                         /* 3 */
+   transform: translate(0, -50%);
+   text-align: center;
+}
+
+.centralizador_inicio span{
+   position: relative;               /* 2 */
+   top: 30%;                         /* 3 */
+   transform: translate(0, -50%);
+   text-align: center;
+}
+
+.centralizador_inicio h2{
+    position: relative;               /* 2 */
+    top: 40%;                         /* 3 */
+    transform: translate(0, -50%);
+    text-align: center;
+ }
+
+.barra_nav {
+    width: 100%;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+
+}
+
+.menu_centro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.altura{
+    width: 100%;
+    height: 720px;
+    position:relative;
+}
+
+.itens_barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.botao_linkedin{
+    width: 200px;
+    height: 30px;
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    transition: ease-in-out 0.3s;
+
+}
+
+.botao_linkedin:hover{
+    letter-spacing: 5px;
+    color: aqua;    
+}
+
+.botao_github{
+    width: 200px;
+    height: 30px;
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+}
+
+
+.intro_botoes{
+    width: 50%;
+    height: 375px;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items:end;
+    position:fixed;
+}
+
+.eu {
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}

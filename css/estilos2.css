@@ -1,0 +1,12 @@
+
+
+
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background: grey;
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+

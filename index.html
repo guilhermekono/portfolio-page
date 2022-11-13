@@ -5,45 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Guilherme Konopatzki</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
+
 </head>
 <body>
     <header>
-        <nav class="itens-barra">
-            <ul onClick="getElementById('close-menu').checked=false;">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="inicio" id="inicio">
-
-        <div class="intro_esquerda">
-            <h1>Olá, eu sou</h1>
-            <span class="nome_typewriter"></span>
-            <span class="cursor"></span>
-            <h1>Desenvlvedor Front-End</h1>
-            <div class="intro_botoes">
-                <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" target="_blank">
-                  <div class="intro_botao_linkedin">
-                    <img src="futuras_imagens" alt="" />
-                    <p>LinkedIn</p>
-                  </div>
-                </a>
-                <a href="https://github.com/guilhermekono" target="_blank">
-                  <div class="principal__botao-github">
-                    <img src="futuras_imagens" alt="" />
-                    <p>Github</p>
-                  </div>
-                </a>
-              </div>
+        <div class="barra_nav">
+            <div class="menu_centro">
+                <div class="div_da_logo">
+                    <a href="index.html"><img src="/assets/logo.png" alt="logo"/></a>
+                </div>    
+                    <nav class="itens_barra">
+                        <ul onClick="getElementById('close-menu').checked=false;">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre-mim">Sobre mim</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#habilidades">Habilidades</a></li>
+                        </ul>
+                    </nav>
             </div>
         </div>
+    </header>
 
-
-
+    <section class="inicio">
+        <div class="altura">
+            <div class="centralizador_inicio">
+                <h1>Olá, eu sou</h1>
+                <span class="nome_typewriter">Guilherme Konopatzki Filho</span>
+                <span class="cursor"></span>
+                <h2>Desenvolvedor Front-End</h1>
+                <div class="intro_botoes">
+                    <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
+                    <div class="botao_linkedin">
+                        <p>LinkedIn</p>
+                    </div>
+                    </a>
+                    <a href="https://github.com/guilhermekono" class="link">
+                    <div class="botao_github">
+                        <p>Github</p>
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="eu">
+                <img
+                  class="desenho"
+                  src="/assets/eu.png"
+                />
+              </div>
+        </div>
     </section>
 
     <section class="sobre-mim" id="sobre-mim"></section>
