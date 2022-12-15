@@ -11,13 +11,13 @@
 </head>
 <body>
     <header>
-        <div class="barra_nav">
-            <div class="menu_centro">
-                <div class="div_da_logo">
+        <div class="barra_navegacao">
+            <div class="menu_centro itens_barra">
+                <div class="logo">
                     <a href="index.html"><img src="/assets/logo.png" alt="logo"/></a>
-                </div>    
-                    <nav class="itens_barra">
-                        <ul onClick="getElementById('close-menu').checked=false;">
+                </div>
+                    <nav>
+                        <ul>
                             <li><a href="#inicio">Início</a></li>
                             <li><a href="#sobre-mim">Sobre mim</a></li>
                             <li><a href="#projetos">Projetos</a></li>
@@ -25,38 +25,42 @@
                         </ul>
                     </nav>
             </div>
-        </div>
+        </div>   
+        
     </header>
 
     <section class="inicio">
         <div class="altura">
             <div class="centralizador_inicio">
-                <h1>Olá, eu sou</h1>
-                <span class="nome_typewriter">Guilherme Konopatzki Filho</span>
-                <span class="cursor"></span>
-                <h2>Desenvolvedor Front-End</h1>
-                <div class="intro_botoes">
-                    <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
-                    <div class="botao_linkedin">
-                        <p>LinkedIn</p>
+                    <div class="texto">
+                        <h1>Olá, eu sou</h1>
+                        <span class="nome_typewriter">Guilherme Konopatzki Filho</span>
+                        <span class="cursor"></span>
+                        <h2>Desenvolvedor Front-End</h1>
+                            <div class="intro_botoes"> 
+                                <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
+                                <div class="botao_linkedin">
+                                    <p>LinkedIn</p>
+                                </div>
+                                </a>
+                                <a href="https://github.com/guilhermekono" class="link">
+                                <div class="botao_github">
+                                    <p>Github</p>
+                                </div>
+                                </a>
+                            </div>
                     </div>
-                    </a>
-                    <a href="https://github.com/guilhermekono" class="link">
-                    <div class="botao_github">
-                        <p>Github</p>
+                    
+                    <div class="eu">
+                        <img class="desenho" src="/assets/eu.png"/>
                     </div>
-                    </a>
-                </div>
-                
             </div>
-            <div class="eu">
-                <img
-                  class="desenho"
-                  src="/assets/eu.png"
-                />
-              </div>
+            
         </div>
     </section>
+
+
+
 
     <section class="sobre-mim" id="sobre-mim"></section>
 
@@ -66,7 +70,7 @@
 
 
 
-    </div>
+    
     
 </body>
 </html>
