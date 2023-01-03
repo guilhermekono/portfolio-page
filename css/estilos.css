@@ -246,22 +246,49 @@ h1, h2{
    }
 
    .barra_navegacao{
-    Top: -100%;
+        Top: -120%;
+        transition: all .3s ease-in-out;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .itens_barra{
+        width:100%;
+        justify-content: space-around;
+        margin-top: 30%;
+        align-items: center;
+    }
+
+    .menu_centro{
+        position: absolute;
+        
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
     }
 
    .barra_navegacao.active{
         Top: 0%;
-        transition: all .3s ease-in-out;
-        height: 100vh;
+        
+   }
+   
+   .menu_centro{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
    }
 
-   .ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(10px);
+   .nav-menu{
+    display: block;
     text-align: center;
-    transition: all .5s;
+    align-items: center;
+    padding: 0;
    }
 
    nav ul li {
