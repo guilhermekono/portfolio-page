@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Guilherme Konopatzki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./css/estilos.css" />
     <script src="https://kit.fontawesome.com/595e5f8bc7.js" crossorigin="anonymous"></script>
@@ -12,24 +13,36 @@
 </head>
 <body >
     <header>
-        <div class="barra_navegacao">
-            <div class="menu_centro itens_barra">
+
+        
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="barra_navegacao active">
+            
+            <div class="menu_centro">
                 <div class="logo">
                     <a href="index.html"><img src="/assets/logo.png" alt="logo"/></a>
                 </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#inicio">Início</a></li>
-                            <li><a href="#sobre-mim">Sobre mim</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#habilidades">Habilidades</a></li>
+                <div class = "itens_barra">
+                    <nav class="nav-bar">
+                        
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                            <li class="nav-item"><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+                            <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                            <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
                         </ul>
+
                     </nav>
+                </div>
             </div>
         </div>   
     </header>
 
-    <section class="inicio">
+    <section class="inicio" id="inicio">
         <div class="altura">
             <div class="centralizador_inicio">
                     <div class="texto">
@@ -52,7 +65,7 @@
                     </div>
                     
                     <div class="eu">
-                        <img class="desenho" src="/assets/eu.png"/>
+                        <img class="desenho desenho_posicao" src="/assets/eu.png"/>
                     </div>
             </div>
             
@@ -68,9 +81,7 @@
 
             </div>
             <div class="texto-sobre-mim">
-                <p> Oi, meu nome é Guilherme Konopatzki e eu 
-                    sou um cientista da computação. 
-                    Sempre me fascinou o caminho da ciência
+                <p> Lorem ipsum do caralho
                 </p>
             </div>
         </div>

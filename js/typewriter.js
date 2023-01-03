@@ -16,5 +16,33 @@ console.log(nome);
 
 typeWriter(nome);
 
+/*
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "assets/menu-fechado.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "assets/menu-aberto.svg";
+    }
+}
+*/
+
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+const barraNav = document.querySelector(".barra_navegacao")
+
+hamburguer.addEventListener("click", () => {
+    hamburguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    barraNav.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburguer.classList.remove("active");
+    navMenu.classList.remove("active");
+    barraNav.classList.remove("active");
+}))
 
 
