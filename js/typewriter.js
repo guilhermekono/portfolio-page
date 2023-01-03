@@ -31,18 +31,22 @@ function menuShow() {
 
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
-const barraNav = document.querySelector(".barra_navegacao")
+const barraNav = document.querySelector(".barra_navegacao");
+const logo = document.querySelector(".logo");
 
 hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle("active");
     navMenu.classList.toggle("active");
     barraNav.classList.toggle("active");
+    logo.classList.toggle("active");
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     navMenu.classList.remove("active");
     barraNav.classList.remove("active");
+    logo.classList.remove("active");
+
 }))
 
 
