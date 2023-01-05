@@ -402,9 +402,13 @@ h1, h2{
 /* fim da seção inicial, começo da apresentação*/
 
 .sobre-mim{
-    background-image: linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0));
+    background: rgba(196, 196, 196, 0.11);
     height: 100vh;
+    width: 100%;
     display: flex;
+    border-bottom: solid 1px rgba(71,23,246,0.9);
+    border-top: solid 1px rgba(71,23,246,0.9);
+    z-index: 0;
 }
 
 .centralizador{

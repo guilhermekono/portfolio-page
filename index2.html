@@ -13,34 +13,26 @@
 </head>
 <body >
     <header>
-
-        <input
-            id="close-menu"
-            class="close-menu"
-            type="checkbox"
-            aria-label="close-menu"
-            role="button"
-      />
-      <label
-            class="close-menu-label"
-            for="close-menu"
-            title="close menu"
-      ></label>
-
-        <div class="barra_navegacao active">
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="barra_navegacao">
             <div class="menu_centro">
-                <div class="logo">
+                <div class="logo nav-link">
                     <a href="index2.html"><img src="/assets/logo.png" alt="logo"/></a>
                 </div>
                 <div class = "itens_barra">
                     <nav class="nav-bar">
                         
-                        <ul onclick="getElementById('close-menu').checked=false;">
+                        <ul class="nav-menu">
                             <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
                             <li class="nav-item"><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
                             <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
                             <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
                         </ul>
+
                     </nav>
                 </div>
             </div>
@@ -50,28 +42,45 @@
     <section class="inicio" id="inicio">
         <div class="altura">
             <div class="centralizador_inicio">
-                    <div class="texto">
-                        <h1>Olá, eu sou</h1>
-                        <span class="nome_typewriter">Guilherme Konopatzki Filho :)</span>
-                        <span class="cursor"></span>
-                        <h2>Desenvolvedor Front-End</h1>
-                            <div class="intro_botoes"> 
-                                <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
-                                <div class="botao_linkedin">
-                                    <p>LinkedIn</p>
-                                </div>
-                                </a>
-                                <a href="https://github.com/guilhermekono" class="link">
-                                <div class="botao_github">
-                                    <p>Github</p>
-                                </div>
-                                </a>
-                            </div>
+  
+                <div class="texto">
+                    <h1>Olá, eu sou</h1>
+                    <span class="nome_typewriter">Guilherme Konopatzki Filho :)</span>
+                    <h2>Desenvolvedor Front-End</h1>
+                    <div class="intro_botoes"> 
+                        <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
+                        <div class="botao_linkedin">
+                            <img src="./assets/linkedin.png" alt=""/>
+                            <p>LinkedIn</p>
+                        </div>
+                        </a>
+                        <a href="https://github.com/guilhermekono" class="link">
+                        <div class="botao_github">
+                            <img src="./assets/github.png" alt=""/>
+                            <p>Github</p>
+                        </div>
+                        </a>
                     </div>
+                    <div class="botoes-mobile">
+                        <div class="botao-mobile-linkedin">
+                            <img src="./assets/linkedin.png" alt=""/>
+                            <a href="https://www.linkedin.com/in/guilherme-konopatzki-673075202/" class="link">
+                                
+                                <p class="linkedin">LinkedIn</p>
+                            </a>
+                        </div>
+                        <div class="botao-mobile-github">
+                            <img src="./assets/github.png" alt=""/>
+                            <a href="https://github.com/guilhermekono" class="link">
+                                <p class="github">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eu">
+                    <img class="desenho desenho_posicao" src="/assets/eu.png"/>
+                </div>
                     
-                    <div class="eu">
-                        <img class="desenho desenho_posicao" src="/assets/eu.png"/>
-                    </div>
             </div>
             
         </div>
