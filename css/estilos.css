@@ -73,14 +73,13 @@ nav {
 
 .altura{
     width:100%;
-    height: 720px;
+    height: 100vh;
     display: flex;
     margin: 0 auto;
 
 }
 
 .centralizador_inicio{
-
     width: 90%;
     display: flex;
     margin-top: auto;
@@ -223,23 +222,28 @@ h1, h2{
     background-color: white;
 }
 
+.botoes-mobile{
+    display: none;
+}
+
 
 @media (max-width: 991px){
+
+   .intro_botoes{
+    display: none;
+   } 
 
    .hamburguer{
     display: block;
     position: fixed;
     z-index: 999;
    }
-
    .hamburguer.active .bar:nth-child(2){
     opacity: 0;
    }
-
    .hamburguer.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
    }
-
    .hamburguer.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
    }
@@ -300,6 +304,99 @@ h1, h2{
     font-size: 30px;
     transition: ease-in-out 0.3s;
    }
+
+   .inicio{
+
+   }
+
+   .altura{ 
+        justify-content: space-around;
+        align-items:center;
+   }
+
+   .centralizador_inicio{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: auto;
+        margin-bottom: auto;
+        height:auto;
+   }
+
+   .eu{
+        transform: scale(0.8);
+        margin-left: 20px;
+   }
+
+   .texto{
+        align-items:center;
+        width:330px;
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .nome_typewriter{
+        font-size: 20px;
+    }
+
+    .botoes-mobile{
+        display: flex;
+        text-size: ;
+    }
+
+    .botao-mobile-linkedin{
+        display: flex;
+        justify-content: space-evenly;
+        width: 48%;
+        height: 60px;
+        background: #22202a;
+        align-items: center;
+        border-radius: 50px 0px 0px 50px;
+        transition: ease-in-out 0.3s;
+        font-size:20px;
+        border-width: 50px;
+        color: #a230ca;
+        margin-right: 2%;
+    }
+
+    .botao-mobile-github{
+        display: flex;
+        margin-left: 2%;
+        justify-content: space-evenly;
+        width: 48%;
+        height: 60px;
+        background: #22202a;
+        align-items: center;
+        border-radius: 0px 50px 50px 0px;
+        transition: ease-in-out 0.3s;
+        font-size:20px;
+        border-width: 50px;
+        color: #a230ca;
+    }
+
+    .botao-mobile-github:hover{
+        letter-spacing: 3px;
+        color: #a230ca;  
+        background-color: #0e0b16;
+        transition: ease-in-out 0.3s;
+        -webkit-box-shadow:0px 0px 20px 4px rgba(71,23,246,1);
+        -moz-box-shadow: 0px 0px 20px 4px rgba(71,23,246,1);
+        box-shadow: 0px 0px 20px 14px rgba(71,23,246,1);   
+    }
+    .botao-mobile-linkedin:hover{
+        letter-spacing: 3px;
+        color: #a230ca;  
+        background-color: #0e0b16;
+        transition: ease-in-out 0.3s;
+        -webkit-box-shadow:0px 0px 20px 4px rgba(71,23,246,1);
+        -moz-box-shadow: 0px 0px 20px 4px rgba(71,23,246,1);
+        box-shadow: 0px 0px 20px 14px rgba(71,23,246,1);   
+    }
 }
 
 /* fim da seção inicial, começo da apresentação*/
