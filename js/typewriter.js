@@ -1,4 +1,4 @@
-const nomeTypewriter = document.querySelector('.nome_typewriter');
+const nomeTypewriter = document.querySelector('.nome-typewriter');
 const nome = nomeTypewriter.innerHTML;
 
 function typeWriter(nome) {
@@ -31,7 +31,7 @@ function menuShow() {
 
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
-const barraNav = document.querySelector(".barra_navegacao");
+const barraNav = document.querySelector(".barra-navegacao");
 const logo = document.querySelector(".logo");
 
 hamburguer.addEventListener("click", () => {
