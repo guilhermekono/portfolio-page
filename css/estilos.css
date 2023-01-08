@@ -234,21 +234,110 @@ h1, h2{
     color: #a230ca;
 }
 
+.sobre-mim {
+    display: flex;
+    justify-content: space-around;
+    background-color: #22202a;
+    z-index: 0;
+    position: relative;
+    padding: 6.5% 15%;
+    min-height: 35vh;
+}
+
+.descricao-botao-email img {
+    width: 22px;
+}
+
+.descricao {
+    line-height: 1.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+.sobre-mim h2 {
+    margin-bottom: 1rem;
+}
+
+.descricao-botoes {
+    margin: auto;
+}
+
+.foto {
+    min-width: 30%;    
+    margin: auto;
+
+}
+
+.foto img {
+    filter: opacity(55%);
+    transition: 0.4s;
+    width: 80%;
+    
+}
+
+.foto img:hover {
+    filter: opacity(70%);
+}
+
+section h1 {
+    margin-bottom: 2rem;
+}
+
+.descricao-botoes {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.descricao-botao-curriculo,
+.descricao-botao-email{
+    display: flex;
+    align-items: center;
+    padding: 3px 5px 5px;
+    justify-content: space-evenly;
+    width: 140px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #121212;
+    margin-top: 1rem;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    height: 40px;
+}
+
+.descricao-botao-email::before, .botao-linkedin::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    border-radius: 9px;
+    background: linear-gradient(
+                    -45deg,
+                    #a230ca,
+                    #4717f6
+                    
+    );
+    background-size: 400%;
+    animation: wave infinite forwards 3s;
+}
+
 @media (max-width: 991px){
 
    .hamburguer{
-    display: block;
-    position: fixed;
-    z-index: 999;
+        display: block;
+        position: fixed;
+        z-index: 999;
    }
    .hamburguer.active .bar:nth-child(2){
-    opacity: 0;
+        opacity: 0;
    }
    .hamburguer.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
    }
    .hamburguer.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
    }
 
    .barra-navegacao{
@@ -268,10 +357,6 @@ h1, h2{
         align-items: center;
     }
 
-    .menu-centro{
-        position: absolute;   
-    }
-
     .logo{
         display: flex;
         justify-content: center;
@@ -286,30 +371,31 @@ h1, h2{
    }
    
    .menu-centro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;   
    }
 
    .nav-menu{
-    display: block;
-    text-align: center;
-    align-items: center;
-    padding: 0;
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding: 0;
    }
 
    .nav-menu a:hover{
-    color: #a230ca;
+        color: #a230ca;
    }
 
    nav ul li {
-    display: block;
-    margin: 20px 0px;
+        display: block;
+        margin: 20px 0px;
    } 
 
    a {
-    font-size: 20px;
-    transition: ease-in-out 0.3s;
+        font-size: 20px;
+        transition: ease-in-out 0.3s;
    }
 
    .altura{ 
@@ -346,6 +432,34 @@ h1, h2{
         width: 320px;
         justify-content: space-between;
     }
+
+    .sobre-mim {
+        display: block;
+        justify-content: space-around;
+        background-color: #22202a;
+        z-index: 0;
+        position: relative;
+        padding: 6.5% 15%;
+        min-height: 35vh;
+    }
+
+    .foto {
+        width: 70%;
+        margin-left:33%;
+    }
+    
+    .foto img {
+        filter: opacity(55%);
+        transition: 0.4s;
+        width: 50%;
+        
+    }
+
+    .descricao {
+        line-height: 1.5rem;
+        width: 100%;
+    }
+
 }
 
 
@@ -359,98 +473,7 @@ Stark       #e7dfdd
 
 */
 
-.descricao-botao-email img {
-    width: 22px;
-  }
-  
-  .sobre-mim {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .descricao {
-    line-height: 1.5rem;
-    width: 70%;
-  }
-  
-  .sobre-mim h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .descricao-botoes {
-    margin-top: 2rem;
-  }
-  
-  .foto {
-    min-width: 30%;
-  }
-  
-  .foto img {
-    border-left: 5px solid #a230ca;
-    filter: opacity(55%);
-    transition: 0.4s;
-    width: 80%;
-  }
-  
-  .foto img:hover {
-    filter: opacity(70%);
-    border-left: 5px solid #4717f6;
-  }
 
-.sobre-mim {
-  background-color: #151515;
-  z-index: 0;
-  position: relative;
-}
-
-.sobre-mim {
-  padding: 6.5% 15%;
-  min-height: 35vh;
-}
-
-section h1 {
-  margin-bottom: 2rem;
-}
-
-.descricao-botoes {
-  display: flex;
-  width: 350px;
-  justify-content: space-between;
-}
-
-.descricao-botao-curriculo,
-.descricao-botao-email{
-  display: flex;
-  align-items: center;
-  padding: 3px 5px 5px;
-  justify-content: space-evenly;
-  width: 140px;
-  border-radius: 8px;
-  position: relative;
-  background-color: #121212;
-  margin-top: 1rem;
-  transition: 0.3s;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
-  height: 40px;
-}
-
-.descricao-botao-email::before, .botao-linkedin::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -2px;
-  border-radius: 9px;
-  background: linear-gradient(
-                -45deg,
-                #a230ca,
-                #4717f6
-                
-  );
-  background-size: 400%;
-  animation: wave infinite forwards 4s;
-}
 
 
 
