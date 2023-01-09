@@ -1,6 +1,8 @@
 const nomeTypewriter = document.querySelector('.nome-typewriter');
 const nome = nomeTypewriter.innerHTML;
 
+
+
 function typeWriter(nome) {
     setTimeout( () => {
         const meuNomeF = nome.split('');
@@ -15,19 +17,6 @@ function typeWriter(nome) {
 console.log(nome);
 
 typeWriter(nome);
-
-/*
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/menu-fechado.svg";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/menu-aberto.svg";
-    }
-}
-*/
 
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
@@ -49,4 +38,25 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 }))
 
+const botaoVerMais = document.querySelector('.botao-ver-mais');
+const habilidades = document.querySelectorAll('.adicional');
+
+function cliqueVer (e) {
+    habilidades.forEach( (elemento) => {
+        if (elemento.classList.contains('adicional')) {
+            elemento.classList.remove('adicional');
+            elemento.classList.add('visivel');
+            botaoVerMais.innerHTML = 'Ver menos';
+        } else {
+            elemento.classList.add('adicional');
+            elemento.classList.remove('visivel');
+            botaoVerMais.innerHTML = 'Ver mais';
+        }
+    } )
+}
+
+function maisProjetos (elemento) {
+    elemento.addEventListener('click', cliqueVer)
+}
+maisProjetos(botaoVerMais);
 

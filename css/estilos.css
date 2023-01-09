@@ -1,3 +1,12 @@
+/* 
+
+Void        #0e0b16
+Fuschia     #a239ca
+Jewel       #4717f6
+Stark       #e7dfdd
+
+*/
+
 ul {
     list-style: none;
     display: flex;
@@ -33,7 +42,7 @@ nav {
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 4;
     border-bottom: solid 1px rgba(71,23,246,0.9);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -464,16 +473,132 @@ section h1 {
 
 
 
-/* fim da seção inicial, começo da apresentação
-
-Void        #0e0b16
-Fuschia     #a239ca
-Jewel       #4717f6
-Stark       #e7dfdd
-
-*/
 
 
 
 
 
+#projetos {
+    background-color: #0e0b16;
+    z-index: -1;
+}
+
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2, .projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+.botao-ver-mais {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px 5px;
+    justify-content: space-evenly;
+    width: 140px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 1rem;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    height: 40px;
+    z-index: 2;
+    background-color: #121212;
+    color:#e7dfdd;
+    border-width: 3px;
+    border-color: #4717f6;
+    cursor: pointer;
+}
+
+.botao-ver-mais:hover {
+    background-color: rgb(34, 32, 42, 1);
+}
+
+.ver-mais {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    color:#e7dfdd;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.projeto-qualquer {
+    height: 195px;
+    width: 310px;
+    display: flex;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+    padding: 3px 3px 3px;
+    position: relative;
+    z-index: 2;
+   background: linear-gradient(
+                    -45deg,
+                    #a230ca,
+                    #4717f6        
+    );
+    background-size: 400%;
+    animation: wave infinite forwards 3s;
+}
+
+.projeto-qualquer::before{
+    background-color: #e7dfdd;
+    height: 195px;
+    width: 310px;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.projeto-qualquer div p {
+    font-size: 20px;
+    color: #e7dfdd;
+}
+
+.projeto-qualquer:hover {
+}
+
+.projeto-qualquer div {
+    background-color: #a230ca;
+    width: 1000px;
+    text-align: center;
+    z-index: 1;
+}
+
+.adicional {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.todos-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.habilidades{
+    height: 100vh;
+}
