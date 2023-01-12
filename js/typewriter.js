@@ -55,8 +55,9 @@ function cliqueVer (e) {
     } )
 }
 
-function maisProjetos (elemento) {
+function maisHabilidades (elemento) {
     elemento.addEventListener('click', cliqueVer)
 }
-maisProjetos(botaoVerMais);
+
+maisHabilidades(botaoVerMais);
 
