@@ -37,7 +37,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     logo.classList.remove("active");
 
 }))
-
+/*
 const botaoVerMais = document.querySelector('.botao-ver-mais');
 const habilidades = document.querySelectorAll('.adicional');
 
@@ -61,3 +61,23 @@ function maisHabilidades (elemento) {
 
 maisHabilidades(botaoVerMais);
 
+*/
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            //entry.target.classList.remove('hidden');
+        } else {
+            
+            entry.target.classList.remove('show');
+            //entry.target.classList.add('hidden');
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
